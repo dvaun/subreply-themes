@@ -1,0 +1,114 @@
+/*
+ * Authored by: Martin Rue | https://github.com/martinrue
+ * Source: https://gist.github.com/martinrue/5dca9274408bdfd227b752b753f5c2f9
+ */
+:root {
+	--gray: #eee;
+}
+
+body, textarea {
+    font-family: "Menlo", Monaco, Consolas, monospace;
+    font-family: -apple-system, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+textarea {
+	margin-bottom: 30px;
+	background: rgb(27,32,43);
+}
+
+* {
+	transition: none !important;
+}
+
+.container {
+    grid-template-columns: 2fr minmax(200px, 1fr) minmax(700px, 3fr) 3fr;
+}
+
+.leftside, .sidebar {
+	background-color: rgb(42,47,58);
+}
+
+.main, .rightside {
+	background-color: rgb(37,42,53);
+}
+
+.logo {
+	margin-right: 25px;
+}
+
+.links a {
+	background-color: rgb(42,47,58);
+	border-bottom-color: rgb(37,42,53);
+	height: auto;
+	padding: 7px 25px;
+}
+
+.links a.on {
+	border-top-color: rgb(37,42,53);
+	background-color: rgb(37,42,53);
+}
+
+.links a:first-child {
+	border-top: rgb(37,42,53) 1px solid;
+}
+
+.links a:hover {
+	background-color: rgb(37,42,53);
+}
+
+.links a svg {
+	display: none;
+}
+
+.main {
+	padding: 0 30px;
+}
+
+.main .extra {
+	margin-top: 5px;
+	color: #aaa;
+}
+
+.main .status {
+	color: #aaa;
+}
+
+.main .list {
+	margin-top: 25px;
+}
+
+.main .reply .placeholder {
+	display: none;
+}
+
+.entry {
+	border-top: none;
+    padding: 12px 0;
+}
+
+.author .here {
+	color: #33ff33;
+}
+
+.author, .content {
+	margin-bottom: 5px;
+}
+
+.author .handle, .author .ago {
+	color: rgb(200,200,200);
+}
+
+.main .list .entry .small {
+	font-size: 13px;
+}
+
+.main .list .entry .small a,
+.main .list .entry .small b {
+	color: #aaa;
+}
+
+.main .list .entry .small a:hover {
+	color: #fff;
+}
