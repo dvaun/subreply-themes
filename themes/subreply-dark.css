@@ -1,0 +1,42 @@
+/*
+ * Authored by: Andrea Della Corte | https://github.com/andreadellacorte
+ * Source: https://github.com/dvaun/subreply-themes/tree/master/themes
+ */
+ 
+html {
+	filter: invert(85%) hue-rotate(180deg) brightness(100%) contrast(100%);
+    background: white;
+}
+
+.emoji {
+	filter: invert(100%) hue-rotate(180deg) brightness(100%) contrast(100%);
+}
+
+.main, .rightside, .leftside, .sidebar {
+    background-color: rgb(230, 230, 240);
+}
+
+.links a {
+    background-color: rgb(230, 230, 240);
+    border-bottom-color: rgb(37, 42, 53);
+    height: auto;
+    padding: 7px 25px;
+}
+
+.links a.on {
+    border-top-color: rgb(37, 42, 53);
+    background-color: rgb(210, 210, 230);
+	color: #000;
+}
+
+.links a:first-child {
+    border-top: rgb(37, 42, 53) 1px solid;
+}
+
+.links a:hover {
+    background-color: rgb(210, 210, 230);
+}
+
+.links a svg {
+    filter: invert(10%) hue-rotate(180deg) brightness(100%) contrast(110%);
+}
